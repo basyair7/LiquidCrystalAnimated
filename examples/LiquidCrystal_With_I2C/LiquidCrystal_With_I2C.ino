@@ -2,6 +2,8 @@
 #include <LiquidCrystal_I2C.h>
 #include <LiquidCrystal_animated.h>
 
+#define DELAYMS 350
+
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 LiquidCrystal_animated ChrAnimated;
 
@@ -17,43 +19,41 @@ void loop() {
   for (int i = 0; i <= 12; i++) {
     lcd.setCursor(0, 0);
     lcd.print(ChrAnimated.Scroll_LCD_Right("Basyair7"));
-    delay(350);
+    delay(DELAYMS);
   }
   
-  for (int i = 0; i <= 50; i++) {
+  for (int i = 0; i <= 46; i++) {
     lcd.setCursor(0, 1);
     lcd.print(ChrAnimated.Scroll_LCD_Left("Cara Membuat Text Berjalan...."));
-    delay(350);
+    delay(DELAYMS);
   }
-
   ChrAnimated.Clear_Scroll_LCD_Left();
 
-  for (int i = 16; i <= 30; i++) {
+  for (int i = 16; i <= 27; i++) {
     lcd.setCursor(0, 0);
     lcd.print(ChrAnimated.Scroll_LCD_Right("Basyair7"));
-    delay(350);
+    delay(DELAYMS);
   }
-
   ChrAnimated.Clear_Scroll_LCD_Right();
   
   for (int i = 0; i <= 12; i++) {
     lcd.setCursor(0, 0);
     lcd.print(ChrAnimated.Scroll_LCD_Right("Basyair7"));
-    delay(350);
+    delay(DELAYMS);
   }
 
-  for (int i = 0; i <= 73; i++) {
+  for (int i = 0; i <= 66; i++) {
     lcd.setCursor(0, 1);
     lcd.print(ChrAnimated.Scroll_LCD_Left("Hello World!!..."));
-    delay(350);
+    delay(DELAYMS);
   }
-
   ChrAnimated.Clear_Scroll_LCD_Left();
 
-  for (int i = 13; i <= 24; i++) {
+  for (int i = 13; i <= 25; i++) {
     lcd.setCursor(0, 0);
     lcd.print(ChrAnimated.Scroll_LCD_Right("Basyair7"));
-    delay(350);
+    delay(DELAYMS);
   }
   ChrAnimated.Clear_Scroll_LCD_Right();
+
 }
