@@ -10,10 +10,11 @@ LiquidCrystal_animated::LiquidCrystal_animated(){
 String LiquidCrystal_animated::Scroll_LCD_Left(String StrDisplay) {
     String result;
     String StrProcess = "                " + StrDisplay + "                ";
+    int StrProcessLength = StrProcess.length();
     result = StrProcess.substring(Li,Lii);
     Li++;
     Lii++;
-    if (Li>StrProcess.length()){
+    if (Li>StrProcessLength){
         Li=16;
         Lii=0;
     }
