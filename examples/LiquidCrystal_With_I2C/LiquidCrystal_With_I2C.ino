@@ -44,7 +44,7 @@ void loop() {
 
   for (int i = 0; i <= 73; i++) {
     lcd.setCursor(0, 1);
-    lcd.print(ChrAnimated.Scroll_LCD_Left("Selamat Datang Di Basyair7!!..."));
+    lcd.print(ChrAnimated.Scroll_LCD_Left("Hello World!!..."));
     delay(350);
   }
 
