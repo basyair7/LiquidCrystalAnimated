@@ -49,7 +49,7 @@ void loop() {
   }
   ChrAnimated.Clear_Scroll_LCD_Left();
 
-  for (int i = 13; i <= 25; i++) {
+  for (int i = 13; i <= 24; i++) {
     lcd.setCursor(0, 0);
     lcd.print(ChrAnimated.Scroll_LCD_Right("Basyair7"));
     delay(DELAYMS);
